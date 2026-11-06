@@ -1,0 +1,161 @@
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+/* ---------- Órbita ---------- */
+.orbit {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin-bottom: 1.5rem;
+  animation: appear 1.2s ease-out both;
+}
+
+.glow {
+  position: absolute;
+  inset: 20%;
+  border-radius: 50%;
+  background: radial-gradient(circle, #7c5cff, transparent 70%);
+  filter: blur(30px);
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.ringOuter,
+.ringInner {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(124, 92, 255, 0.5);
+}
+
+.ringOuter {
+  inset: 0;
+  animation: spin 12s linear infinite;
+}
+
+.ringInner {
+  inset: 32px;
+  border-color: rgba(80, 200, 255, 0.5);
+  animation: spin 8s linear infinite reverse;
+}
+
+.dotOuter,
+.dotInner {
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
+  border-radius: 50%;
+}
+
+.dotOuter {
+  background: #7c5cff;
+  box-shadow: 0 0 12px #7c5cff;
+}
+
+.dotInner {
+  background: #50c8ff;
+  box-shadow: 0 0 12px #50c8ff;
+}
+
+.core {
+  position: absolute;
+  inset: 42%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c5cff, #50c8ff);
+  animation: pulse 3s ease-in-out infinite;
+}
+
+/* ---------- Textos ---------- */
+.title {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, #ffffff, #b9a8ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rise 0.8s ease-out 0.4s both;
+}
+
+.subtitle {
+  max-width: 480px;
+  color: #b5b5c3;
+  line-height: 1.6;
+  animation: rise 0.8s ease-out 0.7s both;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  animation: rise 0.8s ease-out 1s both;
+}
+
+.primary,
+.secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.primary {
+  background: linear-gradient(135deg, #7c5cff, #50c8ff);
+  color: #0f0f14;
+}
+
+.secondary {
+  border: 1px solid #2a2a35;
+  color: #f2f2f2;
+}
+
+.primary:hover,
+.secondary:hover {
+  transform: translateY(-2px);
+}
+
+.secondary:hover {
+  background: #1a1a22;
+}
+
+/* ---------- Animações ---------- */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50%      { opacity: 1;   transform: scale(1.15); }
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: scale(0.6); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Respeita quem desativa animações no sistema */
+@media (prefers-reduced-motion: reduce) {
+  .orbit,
+  .glow,
+  .ringOuter,
+  .ringInner,
+  .core,
+  .title,
+  .subtitle,
+  .actions {
+    animation: none;
+  }
+}
