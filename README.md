@@ -8,7 +8,7 @@
 
 <br />
 
-*Hub de projetos escolares e profissionais*
+*Hub de Utilização para Repertório*
 
 <br />
 
@@ -16,7 +16,13 @@
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![CSS Modules](https://img.shields.io/badge/CSS_Modules-1572B6?style=for-the-badge)
+<img src="https://skillicons.dev/icons?i=css" height="28" alt="CSS Modules" />
+
+<br />
+
+![Último commit](https://badgen.net/github/last-commit/DzarrefDev/SoulCode_Hub?color=7c5cff&icon=github)
+![Commits](https://badgen.net/github/commits/DzarrefDev/SoulCode_Hub?color=4f7cff&icon=github)
+![Stars](https://badgen.net/github/stars/DzarrefDev/SoulCode_Hub?color=f5c542&icon=github)
 
 </div>
 
@@ -44,7 +50,7 @@ O **SoulCode Hub** é um site que funciona como repertório e portfólio de cria
 
 ---
 
-## ✨ O que o site vai ter
+## 📂 O que o site vai ter
 
 | | Recurso | Descrição |
 |---|---|---|
@@ -72,7 +78,7 @@ O **SoulCode Hub** é um site que funciona como repertório e portfólio de cria
 | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) | Páginas, rotas e estrutura do site (App Router) |
 | ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) | Componentes reutilizáveis da interface |
 | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) | Tipagem e segurança no código |
-| ![CSS Modules](https://img.shields.io/badge/CSS_Modules-1572B6?style=flat-square) | Estilos organizados por componente |
+| <img src="https://skillicons.dev/icons?i=css" height="24" alt="CSS Modules" /> | Estilos organizados por componente |
 | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) | Ambiente de execução |
 | ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white) | Análise e padronização do código |
 | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) | Controle de versão e colaboração |
@@ -128,7 +134,7 @@ Cada mudança passa por etapas até chegar à versão final:
 
 <div align="center">
 
-![feature](https://img.shields.io/badge/feature-7c5cff?style=for-the-badge) ➜ ![dev](https://img.shields.io/badge/dev-4f7cff?style=for-the-badge) ➜ ![test](https://img.shields.io/badge/test-50c8ff?style=for-the-badge) ➜ ![main](https://img.shields.io/badge/main-2ecc71?style=for-the-badge)
+🟣 **`feature`** ➜ 🔵 **`dev`** ➜ 🟡 **`test`** ➜ 🟢 **`main`**
 
 </div>
 
